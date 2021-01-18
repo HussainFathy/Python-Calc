@@ -1,0 +1,44 @@
+import time
+print("Welcome to Kamal's calculator ")
+OP = input("Please enter the required operation \n + for summation, - for subtraction, * for multiplication, / for division, % for modulus and X to exit\n  ")
+
+
+if OP != "x" and OP != "X":
+    if OP == "+":
+        X = input("Please enter the first number: ")
+        Y = input("Please enter the second number: ")
+        Z = int(X)+int(Y)
+        print(X+"+" + Y + " is equals " + str(Z))
+        time.sleep(10)
+
+    elif OP == "-":
+        X = input("Please enter the first number: ")
+        Y = input("Please enter the second number: ")
+        Z = int(X)-int(Y)
+        print(X + "-" + Y + " is equals " + str(Z))
+        time.sleep(10)
+
+    elif OP == "*":
+        X = input("Please enter the first number: ")
+        Y = input("Please enter the second number: ")
+        Z = int(X)*int(Y)
+        print(X + "*" + Y + " is equals " + str(Z))
+        time.sleep(10)
+
+    elif OP == "/":
+        X = input("Please enter the first number: ")
+        Y = input("Please enter the second number: ")
+        Z = int(X)/int(Y)
+        print(X + "/" + Y+" is equals " + str(Z))
+        time.sleep(10)
+
+    elif OP == "%":
+        X = input("Please enter the first number: ")
+        Y = input("Please enter the second number: ")
+        Z = int(X) % int(Y)
+        print(X+"%" + Y+" is equals " + str(Z))
+        time.sleep(10)
+
+    else:
+        print("Wrong operation were entered ")
+        time.sleep(10)
